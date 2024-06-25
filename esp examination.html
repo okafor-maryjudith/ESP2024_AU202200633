@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+header {
+    background-color:skyblue;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.pet-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pet {
+    margin: 1rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pet img {
+    max-width: 350px;
+    border-radius: 350px;
+}
+
+.pet:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea, form button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color:skyblue;
+}
+
+footer {
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .pet-gallery {
+        flex-direction: column;
+    }
+
+    form input, form textarea, form button {
+        width: 90%;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to judith's Pet Adoption Agency</h1>
+        <nav>
+            <a href="#available-pets">Available Pets</a>
+            <a href="#adoption-process">Adoption Process</a>
+            <a href="#success-stories">Success Stories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="available-pets">
+        <h2>Available Pets</h2>
+        <div class="pet-gallery">
+            <div class="pet">
+                <img src="../project 1/image/download1.jpg" alt="Pet 1">
+                <p class="text">This photo depicts pet 1.</p>
+            </div>
+            <!-- Repeat for more photos -->
+            <div class="pet">
+                <img src="../project 1/image/download5.jpg" alt="Pet 2">
+                <p class="text">This photo depicts pet 2.</p>
+            </div>
+            <!-- Repeat for more photos -->
+            <div class="pet">
+                <img src="../project 1/image/download6.jpg" alt="Pet 3">
+                <p class="text">This photo depicts pet 3.</p>
+            </div>
+            <!-- Repeat for more photos -->
+            <div class="pet">
+                <img src="../project 1/image/download8.jpg" alt="Pet 4">
+                <p class="text">This photo depicts pet 4.</p>
+            </div>
+            <!-- Add more pets as needed -->
+        </div>
+    </section>
+
+    <section id="adoption-process">
+        <h2>Adoption Process</h2>
+        <p>Step 1: Fill out the adoption inquiry form.</p>
+        <p>Step 2: Our team will review your application and contact you for an interview.</p>
+        <p>Step 3: Meet and greet with the pet.</p>
+        <p>Step 4: Complete the adoption paperwork and take your new pet home!</p>
+    </section>
+
+    <section id="success-stories">
+        <h2>Success Stories</h2>
+        <div class="story">
+            <h3>Story 1</h3>
+            <p> benjamin, a timid rescue dog, was been found by the smith's family. With patience and love, Luna blossomed into a confident and beloved companion, enjoying daily walks and endless cuddles in her new loving home.</p>
+        </div>
+         <!-- Add more stories as needed -->
+        <div class="story">
+            <h3>Story 2</h3>
+            <p> Max, a playful and affectionate tabby cat, was adopted by the ben's family. They instantly fell in love with his curious nature and cuddly personality. Now, Max enjoys sunny naps and endless love in his new, happy home.</p>
+        </div>
+         <!-- Add more stories as needed -->
+        <div class="story">
+            <h3>Story 2</h3>
+            <p> carl, a vibrant Betta fish, was adopted into the heart of the Johnson family. Now thriving in a spacious tank with colorful decorations, Splash brings joy with every graceful glide, making their home brighter and happier every day.</p>
+        </div> 
+         <!-- Add more stories as needed -->
+        <div class="story">
+            <h3>Story 2</h3>
+            <p>luna, a cheerful cockatiel, found a loving home with the Martinez family. With chirps of happiness, Sunny fills their home with warmth and melody, brightening their days with every flutter of wings and joyful song.</p>
+        </div>
+        <!-- Add more stories as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>judith's adoption agency</p>
+    </footer>
+</body>
+</html>
